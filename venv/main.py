@@ -1,3 +1,4 @@
+"""
 sides = [3,2,4,7,5,12,11,13,15,16,14,14]
 
 sides = sorted(sides, reverse=True)
@@ -16,3 +17,17 @@ for i in range(len(sides)):
                     smax=s
 
 print("Максимальная площадь треугольника", smax)
+
+"""
+
+print('Введите три коэффициента квадратного уравнения:')
+
+a = int(input())
+b = int(input())
+c = int(input())
+
+dis = b**2 - 4*a*c
+x1 = (-b + dis**(1/2))/(2*a)
+x2 = (-b - dis**(1/2))/(2*a)
+
+print("Корни квадратного уравнения:\n", x1," \n", x2)
